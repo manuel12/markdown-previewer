@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 .App {
@@ -13,8 +14,6 @@ body {
 .editor {
   margin: auto;
   width: 500px;
-  border: 1px solid black;
-  border-bottom: 2px solid black;
   padding: 0;
   margin-bottom: 20px;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
@@ -23,7 +22,7 @@ body {
 .editor-header {
   background-color: #4aa3a3;
   padding: 5px 0;
-  border-bottom: 1px solid black;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -31,13 +30,26 @@ textarea {
   width: 100%;
   background-color: #c0d8d8;
   margin-bottom: -5px;
-  border: 5px solid green !important;
-  border-radius: 15px;
+  border: 5px solid darkgray !important;
+  border-radius: 10px;
   outline: none;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 25px;
 }
 
 .preview {
-  text-align: left;
   background-color: #c0d8d8;
   margin: auto;
   width: 550px;
@@ -72,19 +84,20 @@ td {
 .preview-header {
   background-color: #4aa3a3;
   padding: 5px 0;
-  border-bottom: 1px solid black;
 }
 
 .preview-area {
+  text-align: left;
   width: 100%;
   height: 100%;
   padding: 0 15px;
 }
 
 .heading-styles {
+  padding: 3px;
   border: 3px solid #999;
   border-radius: 10px;
-  padding: 3px;
+  box-shadow: 0 5px #999;
 }
 
 .container-styles {
