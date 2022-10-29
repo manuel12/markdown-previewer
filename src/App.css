@@ -14,7 +14,7 @@ body {
 .editor {
   margin: auto;
   width: 500px;
-  padding: 0;
+  padding: 5px;
   background-color: lightgrey;
   margin-bottom: 20px;
 }
@@ -53,6 +53,7 @@ textarea::-webkit-scrollbar-thumb {
   background-color: #b7e0ff;
   margin: auto;
   width: 550px;
+  padding: 5px;
 }
 
 .preview pre {
