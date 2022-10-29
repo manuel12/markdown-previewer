@@ -15,12 +15,12 @@ body {
   margin: auto;
   width: 500px;
   padding: 0;
+  background-color: lightgrey;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 
 .editor-header {
-  background-color: #4aa3a3;
+  background-color: #ffbc00;
   padding: 5px 0;
   margin-bottom: 15px;
 }
@@ -28,7 +28,7 @@ body {
 textarea {
   height: 200px;
   width: 100%;
-  background-color: #c0d8d8;
+  background-color: #b7e0ff;
   margin-bottom: -5px;
   border: 5px solid darkgray !important;
   border-radius: 10px;
@@ -50,12 +50,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .preview {
-  background-color: #c0d8d8;
+  background-color: #b7e0ff;
   margin: auto;
   width: 550px;
-
-  border: 1px solid black;
-  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 
 .preview pre {
@@ -82,7 +79,7 @@ td {
 }
 
 .preview-header {
-  background-color: #4aa3a3;
+  background-color: #ffbc00;
   padding: 5px 0;
 }
 
