@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="editor">
-        <div className="editor-header">Editor</div>
+      <div className="editor container-styles">
+        <div className="editor-header heading-styles">Editor</div>
         <textarea
           id="editor"
           placeholder="Add your markdown here..."
@@ -34,8 +34,8 @@ function App() {
           }}
         ></textarea>
       </div>
-      <div className="preview">
-        <div className="preview-header">Previewer</div>
+      <div className="preview container-styles">
+        <div className="preview-header heading-styles">Previewer</div>
         <div
           id="preview"
           className="preview-area"
