@@ -18,10 +18,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="editor container-styles">
-        <div className="editor-header heading-styles">Editor</div>
+      <div className="editor custom-container bg-blue">
+      <div className="editor-header heading-depth bg-yellow">Editor</div>
         <textarea
           id="editor"
+          className="textarea"
           placeholder="Add your markdown here..."
           value={editorMarkdown}
           onChange={(e) => {
@@ -30,8 +31,8 @@ const App = () => {
           }}
         ></textarea>
       </div>
-      <div className="preview container-styles">
-        <div className="preview-header heading-styles">Previewer</div>
+      <div className="preview custom-container bg-blue">
+      <div className="preview-header heading-depth bg-yellow">Previewer</div>
         <div
           id="preview"
           className="preview-area"
@@ -42,3 +43,10 @@ const App = () => {
     </div>
   );
 };
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
